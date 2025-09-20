@@ -1,28 +1,28 @@
 {
-  "name": "neotab",
-  "type": "module",
-  "version": "0.0.0",
+  "name": "glancing",
+  "description": "Glancing",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.25.0",
-    "@types/node": "^22.1.0",
-    "@unocss/eslint-plugin": "^0.61.9",
-    "@vitejs/plugin-vue": "^5.1.2",
-    "eslint": "9.8.0",
-    "typescript": "^5.5.4",
-    "unocss": "^0.61.9",
-    "vite": "^5.4.0",
-    "vite-plugin-static-copy": "^1.0.6",
-    "vue-tsc": "^2.0.29"
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@wxt-dev/module-react": "^1.1.3",
+    "typescript": "^5.9.2",
+    "wxt": "^0.20.6"
   }
 }
